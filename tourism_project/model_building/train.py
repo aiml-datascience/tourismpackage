@@ -154,7 +154,7 @@ with mlflow.start_run():
         create_repo(repo_id=repo_id, repo_type=repo_type, private=False)
         print(f"Space '{repo_id}' created.")
 
-    # create_repo("churn-model", repo_type="model", private=False)
+    # create_repo("tourist-model", repo_type="model", private=False)
     api.upload_file(
         path_or_fileobj="best_tour_model.joblib",
         path_in_repo="best_tour_model.joblib",
