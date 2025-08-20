@@ -15,7 +15,7 @@ tour_dataset = pd.read_csv(DATASET_PATH)
 print("Dataset loaded successfully.")
 
 # Drop the unique identifier
-df.drop(columns=['CustomerID'], inplace=True)
+tour_dataset.drop(columns=['CustomerID'], inplace=True)
 
 # Define the target variable for the classification task
 target = 'ProdTaken'
