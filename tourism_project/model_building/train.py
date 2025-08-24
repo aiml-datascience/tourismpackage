@@ -37,11 +37,8 @@ ytest = pd.read_csv(ytest_path)
 numeric_features = [
     'Age',               # Customer's age
     'CityTier',           # city category based on development, population, and living standards((tier1,tier2..)
-    #'DurationOfPitch',     # Duration of the sales pitch delivered to the customer.
     'NumberOfPersonVisiting', # Total number of people accompanying the customer on the trip.
-   # 'NumberOfFollowups',    # Total number of follow-ups by the salesperson after the sales pitch.
     'PreferredPropertyStar',    # Customer’s estimated salary
-   # 'PitchSatisfactionScore', #Score indicating the customer's satisfaction with the sales pitch.
     'NumberOfTrips',    # Average number of trips the customer takes annually.
     'Passport',    # Whether the customer holds a valid passport (0: No, 1: Yes)
     'OwnCar',    # Whether the customer owns a car (0: No, 1: Yes)
@@ -56,7 +53,6 @@ categorical_features = [
     'Occupation',         # Customer Occupation (e.g Salaried)
     'TypeofContact', # type of contact
     'Gender', #Gender of the customer (Male, Female).
-   # 'ProductPitched', # The type of product pitched to the customer
     'MaritalStatus', # Marital status of the customer (Single, Married, Divorced).
     'Designation' # Customer's Designation (e.g., Manager, VP).
 
