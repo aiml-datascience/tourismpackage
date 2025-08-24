@@ -18,18 +18,14 @@ st.write("Kindly enter the customer details to check whether they are likely to 
 
 NumberOfPersonVisiting = st.number_input("Number Of Person Visiting",min_value=1, value=1)
 NumberOfChildrenVisiting= st.number_input("Number Of Children Visiting",min_value=0, value=0)
-#DurationOfPitch = st.number_input("Duration Of Pitch",min_value=1, value=1)
 Occupation = st.selectbox("Occupation", ["Salaried", "Freelancer", "Small Business","Large Business"])
 TypeofContact = st.selectbox("Type of Contact", ["Company Invited", "Self Inquiry"])
 Gender = st.selectbox("Gender", ["Male", "Female"])
 MaritalStatus = st.selectbox("Marital Status", ["Married","Unmarried", "Single","Divorced"])
 Designation = st.selectbox("Designation", ["Executive", "Manager", "Senior Manager", "VP","AVP"])
-#ProductPitched=  st.selectbox("Product pitched", ["Basic", "Standard","Deluxe"])
 Age = st.number_input("Age", min_value=18, max_value=100, value=30)
 CityTier = st.selectbox("CityTier", ["1", "2","3"])
 PreferredPropertyStar = st.selectbox("PreferredPropertyStar", ["1", "2","3","4","5"])
-#PitchSatisfactionScore= st.selectbox("PitchSatisfactionScore",["1", "2","3","4","5"])
-#NumberOfFollowups = st.number_input("Number Of Followups", min_value=0, value=1)
 NumberOfTrips = st.number_input("Number Of Trips", min_value=0, value=1)
 Passport = st.selectbox("have passport?", ["Yes", "No"])
 OwnCar = st.selectbox("Is own car?", ["Yes", "No"])
@@ -41,15 +37,11 @@ input_data = pd.DataFrame([{
     'Occupation': Occupation,
     'Age': Age,
     'NumberOfChildrenVisiting': NumberOfChildrenVisiting,
-    #'DurationOfPitch': DurationOfPitch,
     'TypeofContact': TypeofContact,
     'Gender': Gender,
     'MaritalStatus': MaritalStatus,
     'Designation': Designation,
-    #'ProductPitched': ProductPitched,
-    #'PitchSatisfactionScore': PitchSatisfactionScore,
     'CityTier': CityTier,
-    #'NumberOfFollowups' : NumberOfFollowups,
     'NumberOfTrips' : NumberOfTrips,
     'PreferredPropertyStar': PreferredPropertyStar,
     'OwnCar': 1 if OwnCar == "Yes" else 0,
